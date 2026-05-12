@@ -1,0 +1,13 @@
+langchain
+langserve
+fastapi
+uvicorn
+python-dotenv
+langchain_community
+beautifulsoup4
+faiss-cpu
+langchain-text-splitters
+sse-starlette
+langchain-huggingface
+sentence-transformers
+langchain-groq

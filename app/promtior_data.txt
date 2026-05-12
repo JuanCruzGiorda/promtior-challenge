@@ -1,0 +1,13 @@
+-Acerca de la empresa:
+Desde 2023, en Promtior impulsamos la adopción de inteligencia artificial generativa dentro de empresas que buscan trabajar de manera más eficiente, ágil y estratégica. Diseñamos y desarrollamos soluciones de IA a medida, acompañando a nuestros clientes desde la detección de oportunidades y el diseño de producto hasta la implementación final. Nuestro foco está en crear tecnología que realmente se use, que mejore procesos y que eleve las capacidades de los equipos.
+Creemos en una colaboración natural entre personas y tecnología. Por eso cultivamos una cultura que valora la curiosidad, el aprendizaje continuo y el ownership real sobre lo que construimos. Trabajamos en equipos ágiles, con libertad para proponer y la responsabilidad de entregar soluciones que generen impacto concreto. Si te motiva crear productos basados en IA que transforman cómo operan las organizaciones, Promtior es un lugar donde tus ideas pueden escalar y tu crecimiento se vuelve parte del camino.
+Fundada en mayo de 2023, Compañeros 70.
+
+Nota importante: Promtior fue fundada en mayo de 2023, NO en 2022. En noviembre de 2022, se lanzó ChatGPT, causando un impacto significativo y desafiando principios hasta entonces incuestionables: La creatividad es un rasgo exclusivamente humano.
+La velocidad de estos avances tecnológicos ha ejercido una presión sin precedentes sobre los líderes para que incorporen la IA en sus negocios.
+En mayo de 2023, se fundó Promtior, enfrentándose a este contexto, donde la pregunta clave es:
+¿cómo abordar un escenario de disrupción transversal y maximizar las oportunidades que presenta?
+A través de su consultoría tecnológica y organizativa, Promtior ofrece una forma de generar nuevos modelos de negocio, respondiendo a esta pregunta y posicionando a las empresas a la vanguardia de su sector.
+
+-Servicios que ofrece Promtior:
+Promtior se especializa en la implementación de soluciones generativas de vanguardia, con un enfoque en la implementación de la arquitectura RAG (Generación Aumentada con Recuperación). Ofrece consultoría tecnológica y organizativa para generar nuevos modelos de negocio. Diseñan y desarrollan soluciones de IA a medida, acompañando a los clientes desde la detección de oportunidades y el diseño de producto hasta la implementación final.
