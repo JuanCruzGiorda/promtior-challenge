@@ -31,10 +31,7 @@ La base de conocimiento mencionaba tanto el lanzamiento de ChatGPT (noviembre 20
 **2. Respuestas en el idioma incorrecto**
 El LLM respondía en español incluso cuando se le hacía una pregunta en inglés. La causa raíz era que el contexto recuperado desde `promtior_data.txt` está en español, y el modelo lo tomaba como referencia para el idioma de la respuesta. Lo resolví marcando la regla de idioma como crítica en el prompt, especificando explícitamente que el idioma del contexto es irrelevante y que la respuesta debe coincidir exclusivamente con el idioma de la pregunta.
 
-**3. Compatibilidad de dependencias**
-El ecosistema de LangChain evolucionó significativamente entre versiones. Durante el desarrollo encontré múltiples errores de `ModuleNotFoundError` y cambios en las interfaces de los proveedores de modelos. Los resolví migrando los imports a los paquetes modernos correctos (`langchain-community`, `langchain-huggingface`, `langchain-groq`)
-
-**4. Elección del LLM para el despliegue**
+**3. Elección del LLM para el despliegue**
 Originalmente el proyecto usaba Ollama con llama2 corriendo localmente, lo cual no era viable para desplegar en la nube sin recursos costosos. Migré primero a HuggingFace Inference API, pero los modelos gratuitos dejaron de ser compatibles con la nueva versión de `huggingface_hub`. Finalmente adopté **Groq** como proveedor, que ofrece un tier gratuito con modelos de alta calidad (`llama-3.3-70b-versatile`) y tiempos de respuesta muy rápidos.
 
 ## Resultado
