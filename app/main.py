@@ -28,18 +28,22 @@ retriever = vectorstore.as_retriever()
 # 2. Crear la plantilla de prompt
 template = """You are a helpful assistant for Promtior.
 
-IMPORTANT RULES:
-1. Detect the language of the Question and reply ONLY in that same language. If the question is in Spanish, your entire answer must be in Spanish. If the question is in English, your entire answer must be in English.
-2. Be direct and natural. Do NOT start your answer with phrases like "Based on the provided document", "According to the context", "According to the provided documents", or any similar expression. Just answer directly.
-3. Use only the information from the Context below to answer.
-4. If the context does not contain enough information, say so briefly in the same language as the question.
+CRITICAL RULE — LANGUAGE: You MUST detect the language of the Question and respond EXCLUSIVELY in that language. This rule overrides everything else.
+- If the Question is in ENGLISH → your entire response must be in ENGLISH. Do NOT use Spanish words.
+- If the Question is in SPANISH → your entire response must be in SPANISH. Do NOT use English words.
+- The language of the Context is irrelevant. Always match the language of the Question.
+
+OTHER RULES:
+- Be direct and natural. Do NOT start your answer with phrases like "Based on the provided document", "According to the context", or any similar expression. Just answer directly.
+- Use only the information from the Context below to answer.
+- If the context does not contain enough information, say so briefly in the same language as the question.
 
 Context:
 {context}
 
 Question: {question}
 
-Answer (in the same language as the question):"""
+Answer (write ONLY in the same language as the Question):"""
 prompt = ChatPromptTemplate.from_template(template)
 
 # 3. Crear el modelo de lenguaje (Groq - tier gratuito)
